@@ -1292,7 +1292,7 @@ def send_certificate_expiration_metrics():
 
 
             metrics.send(
-                f"{certificate.name}.days_until_expiration",
+                "lemur.certificate.days_until_expiration",
                 "gauge",
                 days_until_expiration,
                 metric_tags={
